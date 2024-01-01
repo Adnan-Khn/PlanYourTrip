@@ -1,0 +1,88 @@
+<!-- <div class="wrapperAlert" style="margin-left: 30%; margin-bottom: 500%;">
+
+    <div class="contentAlert">
+  
+      <div class="topHalf">
+  
+        <p><svg viewBox="0 0 512 512" width="100" title="check-circle">
+          <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" />
+          </svg></p>
+        <h1>Congratulations</h1>
+  
+       <ul class="bg-bubbles">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+      </div>
+  
+      <div class="bottomHalf">
+  
+        <p>payment is successfull...</p>
+  
+        <button [routerLink]="['/loginpage']" id="alertMO">back to Login</button>
+  
+      </div>
+  
+    </div>        
+  
+  </div> -->
+
+
+
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+    </head>
+      <style>
+        body {
+          text-align: center;
+          padding: 40px 0;
+          background: #EBF0F5;
+          margin-top:150px;
+        }
+          h1 {
+            color: #88B04B;
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            margin-bottom: 10px;
+          }
+          p {
+            color: #404F5E;
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            font-size:20px;
+            margin: 0;
+          }
+        i {
+          color: #9ABC66;
+          font-size: 100px;
+          line-height: 200px;
+          margin-left:-15px;
+        }
+        .card {
+          background: white;
+          padding: 60px;
+          border-radius: 4px;
+          box-shadow: 0 2px 3px #C8D0D8;
+          display: inline-block;
+          margin: 0 auto;
+        }
+      </style>
+      <body>
+        <div class="card">
+        <div style="border-radius:200px; height:200px; width:200px;  background: #F8FAF5; margin:0 auto;">
+          <i class="checkmark">✓</i>
+        </div>
+          <h1>Success</h1> 
+          <p>Thankyou for Booking<br/><a [routerLink]="['/loginpage']" id="alertMO">back to Login</a></p>
+        </div>
+      </body>
+  </html>

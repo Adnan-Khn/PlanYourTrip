@@ -1,0 +1,28 @@
+<!-- <form class="login" #adminlogin="ngForm" >
+    <h2>Welcome, Admin!</h2>
+    <p>Please log in</p>
+    <input type="text" placeholder="User Name" name="email" [(ngModel)]="admin.email"/>
+    <input type="password" placeholder="Password" name="password" [(ngModel)]="admin.password" />
+    <input   type="submit" (click)="Adminuser()" value="Log In" />
+  </form> -->
+
+  <div class="card" style="margin-left:600px;margin-top:200px">
+    <h2>ADMIN Log-In </h2>
+   
+   <form #adminlogin="ngForm">
+    <div class="input-border">
+     <input type="text"  class="text" name="email" [(ngModel)]="admin.email" required>
+     <label>Name</label>
+     <div class="border"></div>
+    </div>
+    
+    <div class="input-border">
+     <input type="password"  class="text"name="password" [(ngModel)]="admin.password" required>
+     <label>Password</label>
+     <div class="border"></div>
+    </div>
+    
+    <input (click)="Adminuser()"  type="submit" class="btn" value="Log In">
+   </form>
+    
+   </div>

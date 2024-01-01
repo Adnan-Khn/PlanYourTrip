@@ -1,0 +1,53 @@
+    <div class="bs-fullscreen">
+        <div id="carousel-example" class="carousel slide carousel-bg" data-ride="carousel" data-interval="3000">
+           <!-- Bottom dots {indicators} -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+          </ol>
+          
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <!-- <th ><button style="margin-left:2500%" routerLink="/home/{{this.name}}">back</button></th> -->
+                <a  routerLink="/home/{{this.name}}" style="margin-left:50%;" >Back to home</a>
+                <!-- <button type="button" style="margin-left:90%" routerLink="/home/{{this.name}}" class="btn btn-labeled btn-success"> -->
+                    <!-- <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Home</button> -->
+                <div class="container table-responsive py-5" > 
+                    <table class="table table-bordered table-hover">
+                      <thead class="thead-dark">
+                        <tr>
+                            <th style="color: rgb(0, 255, 0);">ID</th>
+                            <th style="color:rgb(0, 255, 0);">PACKAGE</th>
+                            <th style="color: rgb(0, 255, 0);">NAME</th>
+                            <th style="color: rgb(0, 255, 0);">EMAIL</th>
+                            <th style="color: rgb(0, 255, 0);">MOBILE-NUMBER</th>
+                            <th style="color:rgb(0, 255, 0);">DAYS</th>
+                            <th style="color: rgb(0, 255, 0);;">BOOKING-DATE</th>
+                            <th style="color: rgb(0, 255, 0);">NO-OF-PEOPLE</th>
+                            <th style="color: rgb(0, 255, 0);">ACTIONS</th>
+                           
+                        </tr>
+                      </thead>
+                      <tbody>
+                       
+                            <tr >
+                                <td style="color: rgb(0, 255, 0);"><span>{{bookings.id}}</span></td>
+                                <td style="color: rgb(0, 255, 0);"><span>{{bookings.packName}}</span></td>
+                                <td style="color: rgb(0, 255, 0);"><span>{{bookings.name}}</span></td>
+                                <td style="color: rgb(0, 255, 0);"><span>{{bookings.email}}</span></td>
+                                <td style="color: rgb(0, 255, 0);"><span>{{bookings.mobilenumber}}</span></td>
+                                <td style="color: rgb(0, 255, 0);"><span>{{bookings.days}}</span></td>
+                                <td style="color: rgb(0, 255, 0);"><span>{{bookings.bookingDate}}</span></td>
+                                <td style="color: rgb(0, 255, 0);"><span>{{bookings.noOfPeople}}</span></td>
+                               <td> <button type="button" (click)="delete(bookings.id)" class="btn btn-labeled btn-danger">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Cancel</button></td>
+                            </tr>   
+                      </tbody>
+                    </table>
+                    </div>
+            </div>
+          </div>
+          
+
+
+</div>
+</div>
